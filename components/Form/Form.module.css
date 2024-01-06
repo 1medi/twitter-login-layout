@@ -1,0 +1,70 @@
+.formOuterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10vh
+}
+
+.form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.fieldSet {
+  border: none;
+  padding: 30px;
+  border: 2px solid var(--white);
+  max-width: 400px;
+  margin: 0 auto;
+  color: var(--white)
+}
+
+.firstName {
+  width: 50%;
+  display: inline-block;
+  color: var(--white);
+}
+
+.email {
+  width: 100%;
+  display: inline-block;
+}
+
+.firstNameInput{
+  width: 100%;
+}
+
+.firstNameInput:focus {
+  outline: none;
+}
+
+.emailInput:focus {
+  outline:none;
+}
+
+.emailInput {
+  width: 100%;
+}
+
+.fieldSet > legend {
+  font-size: var(--regular-font);
+  margin-bottom: 30px;
+}
+
+.fieldSet > input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 2px solid var(--blue);
+  background-color: var(--light-gray);
+  box-sizing: border-box;
+}

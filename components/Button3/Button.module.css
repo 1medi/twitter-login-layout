@@ -1,0 +1,13 @@
+.button{
+  background-color: var(--aqua);
+  border: none;
+  color: white;
+  padding: 15px;
+  margin: 5px;
+  display: flex;
+  font-size: 18px;
+  width: 350px;
+  border-radius: 30px;
+  justify-content: center;
+  font-weight: bold;
+}

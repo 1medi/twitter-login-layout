@@ -1,0 +1,12 @@
+:root{
+  --aqua: rgb(29, 161, 242);
+  --blue: rgb(5, 5, 85);
+  --light-gray: rgb(217, 217, 217);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0 ,0);
+
+  --regular-font: 20px;
+
+  background-color: black;
+
+}
