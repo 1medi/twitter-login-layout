@@ -1,18 +1,16 @@
 import Image from 'next/image'
 import twitter from '/public/logo-white.png'
+import styles from './Logo.module.css'
  
-export default function Responsive() {
+export default function ResponsiveLogo() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'row'}}>
+    <div className={styles.logo}style={{ display: 'fill', flexDirection: 'row'}}>
       <Image
         alt="Twitter Logo"
-        // Importing an image will
-        // automatically set the width and height
         src={twitter}
-        // Make the image display full width
         style={{
-          width: '100%',
-          height: '100%'
+          width: '60%',
+          height: '60%',
         }}
       />
     </div>

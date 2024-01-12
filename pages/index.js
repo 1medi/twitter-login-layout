@@ -3,9 +3,6 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Footer from '@/components/Footer'
 import Button1 from '@/components/Button1'
-import Button2 from '@/components/Button2'
-import Button3 from '@/components/Button3'
-import Button4 from '@/components/Button4'
 import Logo from '@/components/Logo'
 
 export default function Home() {
@@ -18,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main}`}> 
-      <div>
+      <div className={`${styles.primary}`}>
       <div className={`${styles.image}`}>
         <Logo/>
        </div>
@@ -26,11 +23,11 @@ export default function Home() {
           <h1>Happening Now</h1>
           <h2>Join Today.</h2>
           <div><Button1/></div>
-          <div><Button2/></div>
+          <div><Button1 title="Sign in With Apple" backgroundColor="white" color="black" /></div>
           <h3>OR</h3>
-          <div><Button3/></div>
+          <div><Button1 title="Create Account" backgroundColor= "rgb(29, 161, 242)" color="White"/></div>
           <h3>Already have an account?</h3>
-          <div><Button4/></div>
+          <div><Button1 title="Sign In" backgroundColor="black" color="rgb(29, 161, 242)"/></div>
         </container>
       </div>
       </main>

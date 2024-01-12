@@ -3,8 +3,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  min-height: 20vh;
+  min-height: 30vh;
+  overflow-x:hidden;
+}
+
+.primary{
+  margin:auto;
+  align-content: flex-start;
 }
 
 .container {
@@ -12,34 +17,34 @@
   color: white;
   justify-content: center;
   flex-direction: column;
-  height: 680px;
-  width: 600px;
-  padding-left: 50px
-}
-
-.container>p {
-  display: flex;
-  color: white;
-  font-size: 24px;
-  justify-content: center;
+  height: 650px;
+  width: 400px;
+  margin-top: 100px;
+  margin-right: 100px;
 }
 
 .container>h1 {
-  font-size: 68px;
+  font-size: 64px;
   font-weight: bold;
   display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: bold;
+  font-family: Helvetica Neue;
+  font-style: italic;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .container>h2 {
   font-size: 36px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container>h3 {
   font-size: 24px;
   padding-left: 10px;
   display: flex;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 .main>div {
@@ -49,63 +54,104 @@
 
 .image {
   display: block;
-  min-width: 50px;
-  min-height: 50px;
+  min-width: 10px;
+  min-height: 10px;
   padding-top: 150px;
-  padding-right: 50px;
+  width: 80%;
+  height: 80%;
 }
 
+.container>div>button{
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Phone */
 
-@media screen and (min-width: 414px) and (max-width: 820px) {
+@media screen and (min-width: 412px) and (max-width: 820px) {
+  .main{
+    min-height: 30vh;
+  }
+
   .image {
-    width: 75px;
-    height: 75px;
-    position: absolute;
-    padding-left: 130px;
-    top: -120px;
+    width: 50%;
+    height: 50%;
     flex-direction: column;
+    position: absolute;
+    display: block;
+    padding-left: 75px;
+    top: -125px;
   }
 
-  .container>h1 {
-    font-size: 32px;
-    justify-content: center;
-    padding-top: 10px;
-  }
+.container>h1{
+  font-size: 48px;
+}
+.container>h2{
+  font-size: 18px;
+  text-align: center;
+}
+.container>h3{
+  font-size: 14px;
+}
+.container>div>button{
+  width: 250px;
+  font-size: 16px;
+}
 
-  .container {
-    justify-content: center;
-    align-items: center;
-  }
+.container{
+justify-content: center;
+height: 600px;
+padding-top: 125px;
+margin: auto;
+}
 }
 
 /*Tablet */
-@media screen and (min-width: 820px) {
+@media screen and (min-width:820px) and (max-width: 1024px) {
   .image {
-    width: 225px;
-    height: 225px;
-    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    flex-direction: row;
+    margin-left: 300px;
   }
 
-  .container>h1 {
-    font-size: 48px;
-  }
+.container>div>button{
+  width: 250px;
+}
 
-  .container {
-    align-items: center;
-  }
+.container>h1{
+  font-size: 36px;
+}
+
+.container>h2{
+  float: right;
+}
+
+.container{
+  width: 300px;
+  margin-right:250px
+}
 }
 
 /* Tablet and Smaller Desktop */
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
   .image {
-    width: 375px;
-    height: 375px;
+    width: 50%;
+    height: 50%;
+    min-width: 40%;
+    min-height: 40%;
     flex-direction: column;
+    padding-left: 200px;
+  }
+  .main{
+    max-width: 100%;
   }
 
-  .container>h1 {
-    font-size: 72px;
+  .container>h1{
+    font-size: 50px;
+  }
+
+  .container>h2{
+    font-size: 24px;
   }
 }

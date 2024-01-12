@@ -1,4 +1,9 @@
 .logo{
   display:flex;
+  padding-right: 50px;
+  padding-top: 50px;
+  flex-direction: row;
+  object-fit: fill;
   flex: wrap;
+  margin: auto;
 }
