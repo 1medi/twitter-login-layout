@@ -10,6 +10,7 @@
 .primary{
   margin:auto;
   align-content: flex-start;
+  width: auto;
 }
 
 .container {
@@ -18,13 +19,13 @@
   justify-content: center;
   flex-direction: column;
   height: 650px;
-  width: 400px;
+  width: auto;
   margin-top: 100px;
   margin-right: 100px;
 }
 
 .container>h1 {
-  font-size: 64px;
+  font-size: 72px;
   font-weight: bold;
   display: flex;
   font-family: Helvetica Neue;
@@ -42,7 +43,6 @@
 .container>h3 {
   font-size: 24px;
   padding-left: 10px;
-  display: flex;
     margin-left: auto;
     margin-right:auto;
 }
@@ -50,6 +50,7 @@
 .main>div {
   display: flex;
   flex-direction: row;
+
 }
 
 .image {
@@ -106,12 +107,13 @@ margin: auto;
 }
 }
 
+
 /*Tablet */
 @media screen and (min-width:820px) and (max-width: 1024px) {
   .image {
     width: 500px;
     height: 500px;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 300px;
   }
 

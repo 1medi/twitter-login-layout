@@ -9,8 +9,8 @@ export default function ResponsiveLogo() {
         alt="Twitter Logo"
         src={twitter}
         style={{
-          width: '60%',
-          height: '60%',
+          width: '50%',
+          height: '50%',
         }}
       />
     </div>
